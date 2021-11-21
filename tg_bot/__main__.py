@@ -101,8 +101,8 @@ def send_help(chat_id, text, keyboard=None):
 
     if not keyboard:
         kb = paginate_modules(0, HELPABLE, "help")
-        kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
-        InlineKeyboardButton(text='Back', callback_data='start_back'), InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
+        kb.append([InlineKeyboardButton(text='Sᴜᴘᴘᴏʀᴛ', url='https://t.me/Decodesupport'),
+        InlineKeyboardButton(text='Bᴀᴄᴋ', callback_data='start_back'), InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url='https://t.me/Deecodebots')])
         keyboard = InlineKeyboardMarkup(kb)
     dispatcher.bot.send_message(
         chat_id=chat_id, text=text, parse_mode=ParseMode.MARKDOWN, reply_markup=keyboard
@@ -151,15 +151,11 @@ def start(update: Update, context: CallbackContext):    # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/YorktownEagleUnion',
+                                url='https://t.me/Decodesupport',
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/KigyoUpdates",
-                            ),
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "src_btn"),
-                                url="https://github.com/Dank-del/EnterpriseALRobot",
+                                url="https://t.me/Deecodebots",
                             ),
                         ],
                         [
@@ -219,15 +215,11 @@ def start(update: Update, context: CallbackContext):    # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/YorktownEagleUnion',
+                                url='https://t.me/decodesupport',
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/KigyoUpdates",
-                            ),
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "src_btn"),
-                                url="https://github.com/Dank-del/EnterpriseALRobot",
+                                url="https://t.me/deecodebots",
                             ),
                         ],
                         [
@@ -320,8 +312,8 @@ def help_button(update, context):
                 + help_text
             )
             help_buttons.append(
-                [InlineKeyboardButton(text="Back", callback_data="help_back"),
-                InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion')]
+                [InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="help_back"),
+                InlineKeyboardButton(text='Sᴜᴘᴘᴏʀᴛ', url='https://t.me/decodesupport')]
             )
             query.message.edit_text(
                 text=text,
@@ -332,8 +324,8 @@ def help_button(update, context):
         elif prev_match:
             curr_page = int(prev_match.group(1))
             kb = paginate_modules(curr_page - 1, HELPABLE, "help")
-            kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
-            InlineKeyboardButton(text='Back', callback_data='start_back'), InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
+            kb.append([InlineKeyboardButton(text='Sᴜᴘᴘᴏʀᴛ', url='https://t.me/decodesupport'),
+            InlineKeyboardButton(text='Bᴀᴄᴋ', callback_data='start_back'), InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url='https://t.me/deecodebots')])
             query.message.edit_text(
                 text=gs(chat.id, "pm_help_text"),
                 parse_mode=ParseMode.MARKDOWN,
@@ -343,8 +335,8 @@ def help_button(update, context):
         elif next_match:
             next_page = int(next_match.group(1))
             kb = paginate_modules(next_page + 1, HELPABLE, "help")
-            kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
-            InlineKeyboardButton(text='Back', callback_data='start_back'), InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
+            kb.append([InlineKeyboardButton(text='Sᴜᴘᴘᴏʀᴛ', url='https://t.me/decodesupport'),
+            InlineKeyboardButton(text='Bᴀᴄᴋ', callback_data='start_back'), InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url='https://t.me/deecodebots')])
             query.message.edit_text(
                 text=gs(chat.id, "pm_help_text"),
                 parse_mode=ParseMode.MARKDOWN,
@@ -353,8 +345,8 @@ def help_button(update, context):
 
         elif back_match:
             kb = paginate_modules(0, HELPABLE, "help")
-            kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
-            InlineKeyboardButton(text='Back', callback_data='start_back'), InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
+            kb.append([InlineKeyboardButton(text='Sᴜᴘᴘᴏʀᴛ', url='https://t.me/Decodesupport'),
+            InlineKeyboardButton(text='Bᴀᴄᴋ', callback_data='start_back'), InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url='https://t.me/deecodebots')])
             query.message.edit_text(
                 text=gs(chat.id, "pm_help_text"),
                 parse_mode=ParseMode.MARKDOWN,
