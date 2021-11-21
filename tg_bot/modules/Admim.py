@@ -31,7 +31,7 @@ def fmt_help(update: Update, context: CallbackContext):
     if help_info == "ban":
         help_text = gs(update.effective_chat.id, "md_help")
     elif help_info == "warn":
-        help_text = gs(update.effective_chat.id, "filling_help") 
+        help_text = gs(update.effective_chat.id, "warns_help") 
     elif help_info == "mute":
         help_text = gs(update.effective_chat.id, "filling_help") 
     elif help_info == "lock":
