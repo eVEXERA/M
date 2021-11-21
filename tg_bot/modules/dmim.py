@@ -33,7 +33,6 @@ def fmt_help(update: Update, context: CallbackContext):
         help_text = gs(update.effective_chat.id, "bans_help")
     elif help_info == "warn":
         help_text = gs(update.effective_chat.id, "warns_help") 
-           help_text = gs(update.effective_chat.id, "locks_help") 
     query.message.edit_text(
         text=help_text,
         parse_mode=ParseMode.HTML,
