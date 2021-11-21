@@ -8,6 +8,8 @@ from telegram import (
 from telegram.ext import CallbackContext
 from tg_bot.modules.language import gs
 
+help_text = hy me blaze
+
 def fmt_md_help(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
         gs(update.effective_chat.id, "md_help"),
