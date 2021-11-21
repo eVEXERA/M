@@ -13,7 +13,7 @@ pm_start_text: |
    私はアニメをテーマにしたグループ管理ボットで、楽しい機能がいくつかあります;）
 
    使用可能なコマンドのリストは /help で見つけることができます。
-grp_start_text: 「こんにちは、キギョです。」
+grp_start_text: "こんにちは私は生きています 🐥"
 
 pm_help_text: |
    Hello there! My name is *DeCoDe Manager*. A part of *@TeamDeeCode*.
@@ -23,7 +23,6 @@ pm_help_text: |
 add_bot_to_group_btn:  "私を追加してください"
 support_chat_link_btn:  "サポート"
 updates_channel_link_btn: "更新"
-src_btn:  "ソース"
 
 admin_help: |
    • `/admins`*:* list of admins in the chat
