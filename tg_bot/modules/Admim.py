@@ -29,13 +29,13 @@ def fmt_help(update: Update, context: CallbackContext):
     bot = context.bot
     help_info = query.data.split("fmt_help_")[1]
     if help_info == "ban":
-        help_text = gs(update.effective_chat.id, "md_help")
+        help_text = gs(update.effective_chat.id, "bans_help")
     elif help_info == "warn":
         help_text = gs(update.effective_chat.id, "warns_help") 
     elif help_info == "mute":
-        help_text = gs(update.effective_chat.id, "filling_help") 
+        help_text = gs(update.effective_chat.id, "mute_help") 
     elif help_info == "lock":
-        help_text = gs(update.effective_chat.id, "filling_help") 
+        help_text = gs(update.effective_chat.id, "locks_help") 
     query.message.edit_text(
         text=help_text,
         parse_mode=ParseMode.HTML,
