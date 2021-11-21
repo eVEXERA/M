@@ -8,7 +8,6 @@ from telegram import (
 from telegram.ext import CallbackContext
 from tg_bot.modules.language import gs
 
-help_text = hy me blaze
 
 def fmt_md_help(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
@@ -34,10 +33,7 @@ def fmt_help(update: Update, context: CallbackContext):
         help_text = gs(update.effective_chat.id, "bans_help")
     elif help_info == "warn":
         help_text = gs(update.effective_chat.id, "warns_help") 
-    elif help_info == "mute":
-        help_text = gs(update.effective_chat.id, "muting_help") 
-    elif help_info == "lock":
-        help_text = gs(update.effective_chat.id, "locks_help") 
+           help_text = gs(update.effective_chat.id, "locks_help") 
     query.message.edit_text(
         text=help_text,
         parse_mode=ParseMode.HTML,
@@ -55,9 +51,5 @@ def get_help(chat):
     [
         InlineKeyboardButton(text="BAN", callback_data="fmt_help_ban"),
         InlineKeyboardButton(text="WARN", callback_data="fmt_help_warn")
-    ], 
-    [
-        InlineKeyboardButton(text="MUTE", callback_data="fmt_help_mute"),
-        InlineKeyboardButton(text="LOCK", callback_data="fmt_help_lock")
-    ]
+    ],     
 ]
