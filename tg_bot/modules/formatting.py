@@ -48,6 +48,6 @@ def get_help(chat):
     return [gs(chat, "formt_help_bse"),
     [
         InlineKeyboardButton(text="Markdown", callback_data="fmt_help_md"),
-        InlineKeyboardButton(text="Filling", callback_data="fmt_help_filling")
+        InlineKeyboardButton(text="Stuffing", callback_data="fmt_help_filling")
     ]
 ]
