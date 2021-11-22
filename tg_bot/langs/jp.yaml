@@ -16,9 +16,9 @@ pm_start_text: |
 grp_start_text: "こんにちは私は生きています 🐥"
 
 pm_help_text: |
-   Hello there! My name is *DeCoDe Manager*. A part of *@TeamDeeCode*.
-   I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of
-   the things I can help you with.
+   こんにちは！ 私の名前は* DeCoDe Manager *です。 * @ TeamDeeCode *の一部.
+   私はモジュラーグループ管理ボットで、いくつかの楽しい追加機能があります！ いくつかのアイデアについては、以下をご覧ください
+   私があなたを助けることができること.
    
 add_bot_to_group_btn:  "私を追加してください"
 support_chat_link_btn:  "サポート"
