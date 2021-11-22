@@ -1,18 +1,18 @@
 # Language name in their native
-language: "English 🇺🇲"
+language: "हिन्दी 🇮🇳"
 # name of people(s) who worked on this translation
 authors: "@dank_as_fuck"
 
 # languages
-curr_chat_lang: "Hey. Your current language is {}, select the one you want from the buttons below :)"
-set_chat_lang: "Great, {} it is from now on!"
+curr_chat_lang: "अरु तुम। वर्तमान भाषा {} है। नीचे दिए गए बटन से अपनी जरूरत की भाषा चुनें :)"
+set_chat_lang: "बढ़िया, {} यह अभी से है!"
 
 
 pm_start_text: |
-   Hi {}, I'm {},
-   I am an Anime themed group management bot with some fun extras ;)
+   नमस्ते {}, मैं हूँ {},
+   मैं कुछ मजेदार सुविधाओं के साथ एक एनीमे-थीम वाला समूह प्रबंधन बॉट हूं ;)
    
-   I can do a variety of things, most common of em are:
+   उपलब्ध आदेशों की एक सूची / सहायता के साथ मिल सकती है।:
    - Restrict users with *ban permissions*.
    - Greet users with media + text and buttons, with proper formatting.
    - Restrict users who flood your chat using my *anti-flood* module.
@@ -25,16 +25,16 @@ pm_start_text: |
    
    *Click on help to learn more!*
    
-grp_start_text: "Hi, I'm Alive 🐥."
+grp_start_text: "Hi, नमस्ते मैं जिंदा हूँ 🐥."
 
 pm_help_text: |
    Hello there! My name is *DeCoDe Manager*. A part of *@TeamDeeCode*.
    I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of
    the things I can help you with.
    
-add_bot_to_group_btn: "Add Bot"
-support_chat_link_btn: "Support"
-updates_channel_link_btn: "Update"
+add_bot_to_group_btn: "कृपया मुझे शामिल करें"
+support_chat_link_btn: "सहायता"
+updates_channel_link_btn: "अद्यतन"
 
 admin_help: |
    • `/admins`*:* list of admins in the chat
