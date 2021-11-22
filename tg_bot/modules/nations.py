@@ -480,4 +480,4 @@ def get_help(chat):
     return gs(chat, "nation_help")
 
 
-## __mod_name__ = "Nations"
+__mod_name__ = "Nations"
