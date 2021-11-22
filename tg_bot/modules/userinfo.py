@@ -199,4 +199,4 @@ def get_help(chat):
     return gs(chat, "userinfo_help")
 
 
-__mod_name__ = "Bios/Abouts"
+## __mod_name__ = "Bios/Abouts"
