@@ -47,7 +47,7 @@ __mod_name__ = 'Formatting'
 def get_help(chat):
     return [gs(chat, "formt_help_bse"),
     [
-        InlineKeyboardButton(text="Markdown", callback_data="fmt_help_md"),
-        InlineKeyboardButton(text="Stuffing", callback_data="fmt_help_filling")
+        InlineKeyboardButton(text="Markdown formatting", callback_data="fmt_help_md"),
+        InlineKeyboardButton(text="Fillings", callback_data="fmt_help_filling")
     ]
 ]
