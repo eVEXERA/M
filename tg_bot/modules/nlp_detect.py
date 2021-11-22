@@ -8,7 +8,7 @@ from tg_bot.modules.helper_funcs.chat_status import (
     user_admin,
 )
 
-## __mod_name__ = "NLP"
+__mod_name__ = "NLP"
 
 def get_help(chat):
     return gs(chat, "nlp_help")
