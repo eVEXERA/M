@@ -2401,10 +2401,10 @@ def fed_help(update: Update, context: CallbackContext):
 def get_help(chat):
     return [gs(chat, "feds_help"),
     [
-        InlineKeyboardButton(text="Fedadmins", callback_data="fed_help_admin"),
-        InlineKeyboardButton(text="Fedowners", callback_data="fed_help_owner")
+        InlineKeyboardButton(text="Fed Admin Commands", callback_data="fed_help_admin"),
+        InlineKeyboardButton(text="Fed Owner Commands", callback_data="fed_help_owner")
     ],
     [
-        InlineKeyboardButton(text="Users", callback_data="fed_help_user")
+        InlineKeyboardButton(text="User Commands", callback_data="fed_help_user")
     ],
 ]
