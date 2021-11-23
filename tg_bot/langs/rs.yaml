@@ -66,106 +66,106 @@ antiflood_help: |
      `1w` = 1 неделя
 
 approve_help: |
-     Sometimes, you might trust a user not to send unwanted content.
-     Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.
-     That's what approvals are for - approve of trustworthy users to allow them to send
+     Иногда вы можете доверять пользователю не рассылать нежелательный контент.
+     Может быть, недостаточно, чтобы сделать их администраторами, но вы могли бы быть в порядке с замками, черные списки, и антифлуд к ним не относится.
+     Вот для чего нужны разрешения - одобрять надежных пользователей, чтобы они могли отправлять
      *Admin commands:*
-     • `/approval`*:* Check a user's approval status in current chat.
-     • `/approve`*:* Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.
-     • `/unapprove`*:* Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.
-     • `/approved`*:* List all approved users.
-     • `/unapproveall`*:* Unapprove *ALL* users in a chat. This cannot be undone.
+     • `/approval`*:* Проверить статус одобрения пользователя в текущем чате.
+     • `/approve`*:* Утвердить пользователя. Блокировки, черные списки и антифлуд к ним больше не применяются.
+     • `/unapprove`*:* Неутверждение пользователя. Теперь они снова будут подвержены блокировкам, черным спискам и антифлупу.
+     • `/approved`*:* Список всех утвержденных пользователей.
+     • `/unapproveall`*:* Отменить одобрение * ВСЕХ * пользователей в чате. Это не может быть отменено.
 
 backup_help: |
     *Admin only:*
-     - /import: reply to a group butler backup file to import as much as possible, making the transfer super simple! Note \
-       that files/photos can't be imported due to telegram restrictions.
-     - /export: !!! This isn't a command yet, but should be coming soon!
+     - /import: ответьте на файл резервной копии группового дворецкого, чтобы импортировать как можно больше, что делает передачу очень простой! Примечание \
+       что файлы/фотографии не могут быть импортированы из-за ограничений телеграммы.
+     - /export: !!! Это еще не команда, но скоро появится!
 
 bans_help: |
-    - /kickme: kicks the user who issued the command
+    - /kickme: пинает пользователя, который дал команду
 
      *Admin only:*
-    - /ban <userhandle>: bans a user. (via handle, or reply)
-    - /tban <userhandle> x(m/h/d): bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
-    - /unban <userhandle>: unbans a user. (via handle, or reply)
-    - /kick <userhandle>: kick a user out of the group, (via handle, or reply)
+    - /ban <userhandle>: банит пользователя. (через дескриптор или ответ)
+    - /tban <userhandle> x(m/h/d): банит пользователя на x раз. (через дескриптор или ответ). m = минуты, h = часы, d = дни.
+    - /unban <userhandle>: разблокирует пользователя. (через дескриптор или ответ)
+    - /kick <userhandle>: выгнать пользователя из группы (через дескриптор или ответ)
 
 blacklist_help: |
-    Blacklists are used to stop certain triggers from being said in a group. Any time the trigger is mentioned, the message will immediately be deleted. A good combo is sometimes to pair this up with warn filters!
+    Черные списки используются для того, чтобы определенные триггеры не произносились в группе. Каждый раз, когда упоминается триггер, сообщение немедленно удаляется. Иногда неплохо сочетать это с фильтрами предупреждений!
+     
+    *Примечание*: Черные списки не влияют на администраторов групп.
 
-    *NOTE*: Blacklists do not affect group admins.
-
-     • `/blacklist`*:* View the current blacklisted words.
+     • `/blacklist`*:* Просмотр слов в текущем черном списке.
 
     Admin only:
-     • `/addblacklist <triggers>`*:* Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.
-     • `/unblacklist <triggers>`*:* Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.
-     • `/blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>`*:* Action to perform when someone sends blacklisted words.
+     • `/addblacklist <triggers>`*:* Добавить триггер в черный список. Каждая строка считается одним триггером, поэтому использование разных строк позволит вам добавить несколько триггеров.
+     • `/unblacklist <triggers>`*:* Здесь применяется та же логика новой строки, поэтому вы можете удалить сразу несколько триггеров.
+     • `/blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>`*:* Действия, выполняемые, когда кто-то отправляет слова из черного списка.
 
 cleaner_help: |
-    - /cleanbluetext <on/off/yes/no> - clean commands after sending
-    - /ignorecleanbluetext <word> - prevent auto cleaning of the command
-    - /unignorecleanbluetext <word> - remove prevent auto cleaning of the command
-    - /listcleanbluetext - list currently whitelisted commands
+    - /cleanbluetext <on/off/yes/no> - чистые команды после отправки
+    - /ignorecleanbluetext <word> - запретить автоматическую очистку команды
+    - /unignorecleanbluetext <word> - удалить запретить автоматическую очистку команды
+    - /listcleanbluetext - список команд из белого списка
 
 connections_help: |
-    - /connect: connect a chat (Can be done in a group by /connect or /connect <chat id> in PM)
-    - /connection: list connected chats
-    - /disconnect: disconnect from a chat
-    - /helpconnect: list available commands that can be done remotely
+    - /connect: подключить чат (можно сделать в группе /connect or /connect <chat id> in PM)
+    - /connection: список подключенных чатов
+    - /disconnect: отключиться от чата
+    - /helpconnect: список доступных команд, которые можно выполнять удаленно
 
      *Admin only:*
-    - /allowconnect <yes/no>: allow a user to connect to a chat
+    - /allowconnect <yes/no>: разрешить пользователю подключаться к чату
 
 cust_filters_help: |
-    • `/filters`*:* List all active filters saved in the chat.
+    • `/filters`*:* Список всех активных фильтров, сохраненных в чате.
 
      *Admin only:*
-    • `/filter <keyword> <reply message>`*:* Add a filter to this chat. The bot will now reply that message whenever 'keyword'
-      is mentioned. If you reply to a sticker with a keyword, the bot will reply with that sticker. NOTE: all filter
-      keywords are in lowercase. If you want your keyword to be a sentence, use quotes. eg: /filter "hey there" How you
-      doin?
-    • `/stop <filter keyword>`*:* Stop that filter.
+    • `/filter <keyword> <reply message>`*:* Добавьте фильтр в этот чат. Теперь бот будет отвечать на это сообщение всякий раз, когда 'keyword'
+      упомянуто. Если вы ответите на наклейку с ключевым словом, бот ответит этой наклейкой. Примечание: все фильтр
+      ключевые слова в нижнем регистре. Если вы хотите, чтобы ваше ключевое слово было предложением, используйте кавычки. eg: /filter "Привет" Как ты
+      делаешь?
+    • `/stop <filter keyword>`*:* Остановите этот фильтр.
 
      *Chat creator only:*
-    • `/removeallfilters`*:* Remove all chat filters at once.
+    • `/removeallfilters`*:* Удалить сразу все фильтры чата.
 
-      *Note*: Filters also support markdown formatters like: {first}, {last} etc.. and buttons.
-        Check `/markdownhelp` to know more!
+      *Note*: Фильтры также поддерживают такие средства форматирования разметки, как: {first}, {last} и т.д .. и кнопки.
+        проверить `/markdownhelp` знать больше!
 
 disable_help: |
-    Not everyone wants every feature that the bot offers. Some commands are best
-    left unused; to avoid spam and abuse.
+    Не всем нужны все функции, которые предлагает бот. Некоторые команды лучше
+    остался неиспользованным; чтобы избежать спама и злоупотреблений.
 
     This allows you to disable some commonly used commands, so noone can use them.
-    It'll also allow you to autodelete them, stopping people from bluetexting.
+    Это позволяет отключить некоторые часто используемые команды, чтобы никто не мог их использовать.
 
-     • /cmds: Check the current status of disabled commands
+     • /cmds: Проверить текущий статус отключенных команд
 
      *Admin only:*
-     • /enable <cmd name>: Enable that command
-     • /disable <cmd name>: Disable that command
-     • /listcmds: List all possible disablable commands
+     • /enable <cmd name>: Включите эту команду
+     • /disable <cmd name>: Отключить эту команду
+     • /listcmds: Список всех возможных запрещаемых команд
 
 feds_help: |
-    Ah, group management. Everything is fun, until the spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
-    But then you have many groups, and you don't want this spammer to be in one of your groups - how can you deal? Do you have to manually block it, in all your groups?
+    Ах, групповое руководство. Все весело, пока в вашу группу не начнет заходить спамер, а вам придется его заблокировать. Потом нужно начинать банить все больше и больше, а это больно.
+    Но тогда у вас много групп, и вы не хотите, чтобы этот спамер был в одной из ваших групп - как вы можете справиться? Вам нужно вручную заблокировать это во всех ваших группах?
 
-    No longer! With Federation, you can make a ban in one chat overlap with all other chats.
-    You can even designate admin federations, so your trusted admin can ban all the chats you want to protect.
+    Больше никогда! С помощью Federation вы можете сделать бан в одном чате перекрывающимся со всеми остальными чатами.
+    Вы даже можете назначить федерацию администраторов, чтобы ваш доверенный администратор мог заблокировать все чаты, которые вы хотите защитить.
 
     *Commands Available*:
 
-     • /newfed <fedname>: Create a new Federation with the name given. Users are only allowed to have one Federation. This method can also be used to rename the Federation. (max. 64 characters)
-     • /delfed: Delete your Federation, and any information related to it. Will not cancel blocked users.
-     • /fedinfo <FedID>: Information about the specified Federation.
-     • /joinfed <FedID>: Join the current chat to the Federation. Only chat owners can do this. Every chat can only be in one Federation.
-     • /leavefed <FedID>: Leave the Federation given. Only chat owners can do this.
-     • /fpromote <user>: Promote Users to give fed admin. Fed owner only.
-     • /fdemote <user>: Drops the User from the admin Federation to a normal User. Fed owner only.
-     • /fban <user>: Prohibits users from all federations where this chat takes place, and executors have control over.
-     • /unfban <user>: Cancel User from all federations where this chat takes place, and that the executor has control over.
+     • /newfed <fedname>: Создайте новую Федерацию с указанным именем. Пользователям разрешено иметь только одну федерацию. Этот метод также можно использовать для переименования Федерации. (Максимум. 64 символа)
+     • /delfed: Удалите свою Федерацию и любую связанную с ней информацию. Не отменяет заблокированных пользователей.
+     • /fedinfo <FedID>: Информация об указанной Федерации.
+     • /joinfed <FedID>: Присоединяйтесь к текущему чату в Федерации. Это могут делать только владельцы чата. Каждый чат может быть только в одной федерации.
+     • /leavefed <FedID>: Оставьте Федерацию заданной. Это могут делать только владельцы чата.
+     • /fpromote <user>: Продвигайте пользователей, чтобы дать админку сытости. Только владелец ФРС.
+     • /fdemote <user>: Выбрасывает пользователя из административной федерации в обычного пользователя. Только владелец ФРС.
+     • /fban <user>: Запрещает пользователям из всех федераций, где проходит этот чат, и исполнители имеют контроль над.
+     • /unfban <user>: Отменить пользователя из всех федераций, в которых проходит этот чат, и над которыми имеет контроль исполнитель.
      • /setfrules: Arrange Federation rules.
      • /frules: See Federation regulations.
      • /chatfed: See the Federation in the current chat.
