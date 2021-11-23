@@ -150,19 +150,11 @@ def start(update: Update, context: CallbackContext):    # sourcery no-metrics
                     [
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "support_chat_link_btn"),
-                                url='https://t.me/Decodesupport',
-                            ),
-                            InlineKeyboardButton(
-                                text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/Deecodebots",
-                            ),
-                        ],
-                        [
-                            InlineKeyboardButton(
                                 text="Try inline",
                                 switch_inline_query_current_chat="",
-                            ),
+                            ),                            
+                        ],
+                        [
                             InlineKeyboardButton(
                                 text="Help",
                                 callback_data="help_back",
@@ -172,6 +164,16 @@ def start(update: Update, context: CallbackContext):    # sourcery no-metrics
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
+                            ),
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text=gs(chat.id, "support_chat_link_btn"),
+                                url='https://t.me/Decodesupport',
+                            ),
+                            InlineKeyboardButton(
+                                text=gs(chat.id, "updates_channel_link_btn"),
+                                url="https://t.me/Deecodebots",
                             ),
                         ],
                     ]
