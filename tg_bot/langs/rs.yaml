@@ -166,38 +166,38 @@ feds_help: |
      • /fdemote <user>: Выбрасывает пользователя из административной федерации в обычного пользователя. Только владелец ФРС.
      • /fban <user>: Запрещает пользователям из всех федераций, где проходит этот чат, и исполнители имеют контроль над.
      • /unfban <user>: Отменить пользователя из всех федераций, в которых проходит этот чат, и над которыми имеет контроль исполнитель.
-     • /setfrules: Arrange Federation rules.
-     • /frules: See Federation regulations.
-     • /chatfed: See the Federation in the current chat.
-     • /fedadmins: Show Federation admin.
-     • /fbanlist: Displays all users who are victimized at the Federation at this time.
-     • /fednotif <on / off>: Federation settings not in PM when there are users who are fban / unfban.
-     • /fedchats: Get all the chats that are connected in the Federation.
-     • /importfbans: Reply to the Federation backup message file to import the banned list to the Federation now. (disabled for now.)
+     • /setfrules: Упорядочить правила Федерации.
+     • /frules: См. Правила Федерации.
+     • /chatfed: Смотрите Федерацию в текущем чате.
+     • /fedadmins: Показать администратора федерации.
+     • /fbanlist: Отображает всех пользователей, которые в настоящее время являются жертвами Федерации.
+     • /fednotif <on / off>: Настройки федерации не в личке, когда есть пользователи, которые находятся в фбан /Unban.
+     • /fedchats: Получите все чаты, подключенные в Федерации.
+     • /importfbans: Ответьте на файл сообщения резервной копии Федерации, чтобы импортировать заблокированный список в Федерацию сейчас. (отключен на данный момент.)
 
 fun_help: |
-     • /runs: reply a random string from an array of replies.
-     • /pat: pat a person, cool thing to have for cute ones :3
-     • /slap: slap a user, or get slapped if not a reply.
-     • /shrug : get shrug XD.
-     • /table : get flip/unflip :v.
-     • /decide : Randomly answers yes/no/maybe
-     • /toss : Tosses A coin
-     • /roll : Roll a dice.
-     • /rlg : Join ears,nose,mouth and create an emo ;-;
-     • /shout <keyword>: write anything you want to give loud shout.
-     • /stickerid: reply to a sticker to get its ID.
-     • /getsticker: reply to a sticker to get the raw PNG image.
-     • /steal: reply to a sticker or image to add it to your pack.
-     • /stickers: search stickers in combot sticker finder.
+     • /runs: ответить случайной строкой из массива ответов.
+     • /pat: погладить человека, круто иметь для милых :3
+     • /slap: дать пощечину пользователю или получить пощечину, если нет ответа.
+     • /shrug : пожать плечами XD.
+     • /table : получать flip/unflip :v.
+     • /decide : Случайно ответы yes/no/может быть
+     • /toss : Бросает монету
+     • /roll : Бросьте кубик.
+     • /rlg : Соедините уши, нос, рот и создайте эмо ;-;
+     • /shout <keyword>: напиши все, что хочешь громко крикнуть.
+     • /stickerid: ответьте на стикер, чтобы узнать его идентификатор.
+     • /getsticker: ответьте на стикер, чтобы получить необработанное изображение PNG.
+     • /steal: ответьте на стикер или изображение, чтобы добавить его в свой набор.
+     • /stickers: искать стикеры в поисковике стикеров combot.
 
 antispam_help: |
      *Admins only:*
-      • `/antispam <on/off/yes/no>`*:* Will toggle our antispam tech or return your current settings.
+      • `/antispam <on/off/yes/no>`*:* Включит нашу технологию защиты от спама или вернет ваши текущие настройки.
 
-     Anti-Spam, used by bot devs to ban spammers across all groups. This helps protect
-     you and your groups by removing spam flooders as quickly as possible.
-     *Note:* Users can appeal gbans or report spammers at @YorkTownEagleUnion
+     Анти-спам, используемый разработчиками ботов для запрета спамеров во всех группах. Это помогает защитить
+     вы и ваши группы, удалив спам-потоки как можно быстрее.
+     *Примечание:* Пользователи могут подавать апелляцию на gbans или сообщать о спамерах на @DeCodeSupport
 
      Kigyo also integrates @Spamwatch API to remove Spammers as much as possible from your chatroom!
      *What is SpamWatch?*
