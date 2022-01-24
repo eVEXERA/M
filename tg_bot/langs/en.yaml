@@ -9,7 +9,7 @@ set_chat_lang: "Great, {} it is from now on!"
 
 
 pm_start_text: |
-   Hey there! My name is {} -i'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
+   Hey there! My name is Anie -i'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
    
    Join my [news channel[(t.me/RaichuUpdate) to get information on all the latest updates.
    
@@ -28,7 +28,7 @@ pm_help_text: |
    - /help: Sends this message; I'll tell you more about myself!
    - /donate: Gives you info on how to support me and my creator.
    
-   If you have any bugs or questions on how to use me, have a look at my [website](t.me/sammyxd), or head to @RaiChuOfficial.
+   If you have any bugs or questions on how to use me, have a look at my [website](t.me/ProjectWebsite), or head to @RaiChuOfficial.
    All commands can be used with the following: / !
 
 add_bot_to_group_btn: "Add me to your chat!"
