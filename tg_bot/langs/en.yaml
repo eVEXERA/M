@@ -9,30 +9,29 @@ set_chat_lang: "Great, {} it is from now on!"
 
 
 pm_start_text: |
-   Hi {}, I'm {},
-   I am an Anime themed group management bot with some fun extras ;)
+   Hey there! My name is {} -i'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
    
-   I can do a variety of things, most common of em are:
-   - Restrict users with *ban permissions*.
-   - Greet users with media + text and buttons, with proper formatting.
-   - Restrict users who flood your chat using my *anti-flood* module.
-   - *Warn* users according to the options set and restrict em accordingly.
-   - Save notes and filters with proper formatting and reply markup.
+   Join my [news channel[(t.me/RaichuUpdate) to get information on all the latest updates.
    
-   Theres even more! this is just the tip of the iceberg. Do note I need
-   to be promoted with proper admin permissions to function properly. 
-   Else I won't be able to function as said.
-   
-   *Click on help to learn more!*
+   Use the command /help.
    
 grp_start_text: "Hi, I'm Alive 🐥."
 
 pm_help_text: |
-   Hello there! My name is *DeCoDe Manager*. A part of *@TeamDeeCode*.
-   I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of
-   the things I can help you with.
+   *HELP*
    
-add_bot_to_group_btn: "Add Bot"
+   Hey! My name is Rose. I am a group management bot, here to help you get around and keep the order in your groups!
+   I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
+   
+   *Helpfull commands:*
+   - /start: Starts me! You've probably already used this.
+   - /help: Sends this message; I'll tell you more about myself!
+   - /donate: Gives you info on how to support me and my creator.
+   
+   If you have any bugs or questions on how to use me, have a look at my [website](t.me/sammyxd), or head to @RaiChuOfficial.
+   All commands can be used with the following: / !
+
+add_bot_to_group_btn: "Add me to your chat!"
 support_chat_link_btn: "Support"
 updates_channel_link_btn: "Update"
 
