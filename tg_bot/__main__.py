@@ -287,8 +287,8 @@ def help_button(update, context):
         elif prev_match:
             curr_page = int(prev_match.group(1))
             kb = paginate_modules(curr_page - 1, HELPABLE, "help")
-            kb.append([InlineKeyboardButton(text='Sᴜᴘᴘᴏʀᴛ', url='https://t.me/decodesupport'),
-            InlineKeyboardButton(text='Bᴀᴄᴋ', callback_data='start_back'), InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url='https://t.me/deecodebots')])
+            kb.append([InlineKeyboardButton(text='Back', callback_data='start_back'),
+                       InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
             query.message.edit_text(
                 text=gs(chat.id, "pm_help_text"),
                 parse_mode=ParseMode.MARKDOWN,
@@ -298,8 +298,8 @@ def help_button(update, context):
         elif next_match:
             next_page = int(next_match.group(1))
             kb = paginate_modules(next_page + 1, HELPABLE, "help")
-            kb.append([InlineKeyboardButton(text='Sᴜᴘᴘᴏʀᴛ', url='https://t.me/decodesupport'),
-            InlineKeyboardButton(text='Bᴀᴄᴋ', callback_data='start_back'), InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url='https://t.me/deecodebots')])
+            kb.append([InlineKeyboardButton(text='Back', callback_data='start_back'),
+                       InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
             query.message.edit_text(
                 text=gs(chat.id, "pm_help_text"),
                 parse_mode=ParseMode.MARKDOWN,
@@ -308,8 +308,8 @@ def help_button(update, context):
 
         elif back_match:
             kb = paginate_modules(0, HELPABLE, "help")
-            kb.append([InlineKeyboardButton(text='Sᴜᴘᴘᴏʀᴛ', url='https://t.me/Decodesupport'),
-            InlineKeyboardButton(text='Bᴀᴄᴋ', callback_data='start_back'), InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url='https://t.me/deecodebots')])
+            kb.append([InlineKeyboardButton(text='Back', callback_data='start_back'),
+                       InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
             query.message.edit_text(
                 text=gs(chat.id, "pm_help_text"),
                 parse_mode=ParseMode.MARKDOWN,
